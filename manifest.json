@@ -1,0 +1,16 @@
+{
+  "id": "designer",
+  "name": "Designer",
+  "version": "1.0.0",
+  "description": "AI Design Agent — Figma integration, brand asset management, creative automation",
+  "author": "Imperal",
+  "entry": "main.py",
+  "requires": ["imperal-sdk>=1.5.0"],
+  "scopes": ["store:read", "store:write", "ai:chat", "http:external"],
+  "config_schema": {
+    "figma_token": {"type": "string", "label": "Figma API Token", "secret": true},
+    "figma_team_id": {"type": "string", "label": "Figma Team ID"},
+    "brand_file_key": {"type": "string", "label": "Main Brand File Key"},
+    "cache_ttl": {"type": "integer", "label": "Cache TTL (seconds)", "default": 3600}
+  }
+}

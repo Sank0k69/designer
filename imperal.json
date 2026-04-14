@@ -1,0 +1,21 @@
+{
+  "id": "designer",
+  "name": "Designer",
+  "version": "1.0.0",
+  "description": "Figma-powered design agent. Provides brand assets, icons, logos, and creative automation to other extensions via IPC.",
+  "icon": "palette",
+  "category": "creative",
+  "pricing": {
+    "model": "per_action",
+    "actions_per_export": 1,
+    "actions_per_ai_generation": 5
+  },
+  "ipc_exports": [
+    "get_brand_assets",
+    "export_component",
+    "list_components",
+    "get_design_tokens",
+    "search_assets",
+    "get_logo"
+  ]
+}
